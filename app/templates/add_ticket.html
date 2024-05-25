@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="text-white my-4">Add New Ticket</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <form method="POST">
+        <div class="mb-4">
+          <label for="title" class="form-label text-white">Title</label>
+          <input type="text" class="form-control bg-light text-dark border-secondary" id="title" name="title" required>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label text-white">Description</label>
+          <textarea class="form-control bg-light text-dark border-secondary" id="description" name="description" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="assigned_to" class="form-label text-white">Assigned To</label>
+          <select class="form-select mb-4" id="assigned_to" name="assigned_to" required>
+            <option selected="">Choose an user</option>
+            <option value="Isaias">Isaias</option>
+            <option value="Joaquin">Joaquin</option>
+            <option value="Krishna">Krishna</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+
+
+

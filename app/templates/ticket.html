@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="card bg-light text-dark mt-3 mb-3">
+    <div class="card-header">Created at: {{ ticket.created_at }}</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ ticket.title }}</h5>
+      <p class="card-text">{{ ticket.description }}</p>
+      <p class="card-text">Assigned to: {{ ticket.assigned_to }}</p>  <!-- Mostrar el nuevo campo -->
+    </div>
+  </div>
+{% endblock %}
+
+
